@@ -1,0 +1,32 @@
+# Timer Program
+
+# packages - > modules -> time- >methods
+import time
+  
+# user defined fucntion with input as seconds
+def countdown_timer(seconds):
+    
+    while seconds > 0:       
+
+        # converting a number into minutes and seconds
+        mins = int(seconds / 60) 
+        secs = int(seconds % 60)   
+
+        #formatting the string
+        timer = f'{mins}:{secs}'
+
+        #print timer variable
+        print(timer)
+        
+        seconds -= 1
+    
+      
+    print('Time Up!')
+
+   
+  
+#Ask user to input the no. of seconds for the timer
+seconds = input("Enter the time in number of seconds: ")
+  
+# function call
+countdown_timer(int(seconds))

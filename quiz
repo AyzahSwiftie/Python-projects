@@ -1,0 +1,23 @@
+score = 0
+
+print("TRIVIA QUIZ")
+print("------------")
+print()
+print()
+print("Question 1: ")
+print("what is the larget planet in our solar system?")
+print("a; Venus")
+print("b; Mercury")
+print("c; Earth")
+answer1 = input("Your answer: ")
+if answer1 == "b":
+    print("Correct!")
+    score = 10
+elif answer1 == "a" or "c":
+    print("Incorrect. the correct answer was b; Mercury.")
+else:
+    answer1 = input("Error. Choose a letter between a through c: ")
+
+print("Question 2:")
+    
+print(str(score))
